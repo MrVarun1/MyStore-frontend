@@ -1,0 +1,58 @@
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* Centered and padded container */
+.admin-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Data list styling */
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 1rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Text styling */
+dt {
+  font-weight: 600;
+  color: #222;
+}
+
+dd {
+  margin: 0;
+  color: #444;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 600px) {
+  dl {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  dt,
+  dd {
+    padding: 0.25rem 0;
+  }
+
+  dd {
+    margin-bottom: 1rem;
+  }
+}

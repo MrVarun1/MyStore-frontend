@@ -1,0 +1,130 @@
+/* --------------------- Login Page Styles --------------------- */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  padding: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card h1 {
+  margin-bottom: 2rem;
+  color: #222;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input-container {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-container input:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+p {
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+
+  .input-container input {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* --------------------- Demo Credentials --------------------- */
+.test-credentials {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.test-credentials h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.test-credentials table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.test-credentials th,
+.test-credentials td {
+  border: 1px solid #e0e0e0;
+  padding: 0.75rem;
+}
+
+.test-credentials th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #444;
+}
+
+.test-credentials td {
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .test-credentials table,
+  .test-credentials th,
+  .test-credentials td {
+    font-size: 0.85rem;
+  }
+}
